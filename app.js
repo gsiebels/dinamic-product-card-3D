@@ -18,14 +18,20 @@ container.addEventListener('mousemove', (e) => {
 container.addEventListener('mouseenter', e => {
   card.style.transition = 'none'
   // Popup
-  title.style.transform = 'translateZ(100px)'
-  car.style.transform = 'translateZ(100px)'
-  reserve.style.transform = 'translateZ(100px)'
-  info.style.transform = 'translateZ(100px)'
-  features.style.transform = 'translateZ(100px)'
+  title.style.transform = 'translateZ(150px)'
+  car.style.transform = 'translateZ(150px)'
+  reserve.style.transform = 'translateZ(150px)'
+  info.style.transform = 'translateZ(150px)'
+  features.style.transform = 'translateZ(150px)'
 })
 // Animate out
 container.addEventListener('mouseleave', () => {
   card.style.transition = 'all 0.5s ease'
   card.style.transform = `rotateY(0deg) rotateX(0deg)`
+  // back to flat
+  title.style.transform = 'translateZ(0px)'
+  car.style.transform = 'translateZ(0px)'
+  reserve.style.transform = 'translateZ(0px)'
+  info.style.transform = 'translateZ(0px)'
+  features.style.transform = 'translateZ(0px)'
 })
